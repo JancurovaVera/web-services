@@ -1,0 +1,233 @@
+html {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  background-color: #fff;
+}
+
+.container {
+  background-color: #fafafa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.hero > img {
+  max-width: 425px;
+}
+
+h1 {
+  font-size: 28px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 16ox;
+  text-align: center;
+}
+
+p {
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 20px;
+  line-height: 1.5em;
+  color: #8B8B8B;
+}
+
+.ikona {
+  font-size: 13px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px #407bff1f;
+  opacity: 1;
+  width: 430px;
+  height: 80px;
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.ikona > img {
+  padding-right: 50px;
+  padding-left: 40px;
+}
+
+.popis {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  color: #8B8B8B;
+}
+
+.hero {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.buttons {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  margin: 20px;
+}
+
+button {
+  font-size: 14px;
+  background-color: #8b8b8b;
+  color: #fff;
+  border-radius: 20px;
+  cursor: pointer;
+  height: 40px;
+  border: 0px;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-bottom: 10px;
+}
+
+button:hover {
+  font-size: 14px;
+  background-color: #407bff;
+}
+
+hr {
+  border: 0;
+  height: 2px;
+  background: #407bff;
+  width: 60px;
+}
+
+/* MOBIL */
+@media only screen and (max-width: 640px) {
+  .ikona {
+    width: 100%;
+  }
+}
+
+/* TABLET */
+@media only screen and (min-width: 641px) {
+  .buttons {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+  }
+  button {
+    display: block;
+    margin: 0 20px;
+  }
+  .ikony {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    margin-left: -5px;
+    margin-right: -5px;
+  }
+  .ikona {
+    flex-flow: column;
+    width: 160px;
+    height: 100px;
+    padding: 20px;
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .ikona > img {
+    margin-bottom: 20px;
+  }
+  .ikona > p {
+    text-align: center;
+  }
+
+  p {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
+/* DESKTOP */
+
+@media only screen and (min-width: 1100px) {
+  body {
+    display: flex;
+    justify-content: center;
+  }
+
+  .container {
+    width: 1040px;
+    height: 100vh;
+  }
+
+  .hero {
+    flex-flow: row-reverse;
+  }
+
+  .leve {
+    width: 490px;
+    margin-right: 90px;
+  }
+min
+  p,
+  h1,
+  hr {
+    padding: 0px;
+    text-align: left;
+  }
+
+  hr {
+    margin: 0px;
+  }
+
+  .buttons {
+    margin-left: 0px;
+    justify-content: flex-start;
+  }
+
+  button {
+    display: block;
+    margin: 0 20px 0 0;
+  }
+
+  .ikony {
+    min-width: 400px;
+  }
+  .ikona {
+    width: 160px;
+    height: 190px;
+    padding: 5px;
+    justify-content: center;
+  }
+  .ikona > img {
+    width: 45px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+  }
+
+  .sekce {
+    margin-top: 80px;
+    align-items: center;
+    display: flex;
+  }
+
+  .sekce.kancelare {
+    flex-flow: row-reverse;
+  }
+
+  .sekce.delegatu {
+    flex-flow: row;
+  }
+
+  .sekce.kancelare > .sluzby {
+    width: 400px;
+    padding-left: 60px;
+  }
+
+  .sekce.delegatu > .sluzby {
+    width: 400px;
+    padding-right: 60px;
+  }
+
+  h2 {
+    text-align: left;
+  }
+}
